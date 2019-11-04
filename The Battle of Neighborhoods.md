@@ -1,0 +1,48 @@
+
+## Description of the problem and a discussion of the background
+
+![Alt text](https://github.com/Yosefyw/Coursera_Capstone_Project/blob/master/Dallas%20TX.jpeg?raw=true "Title text")
+
+
+**The Battle of Neighborhoods Dallas** Project focuses on exploring Dallas, TX using Foursqaure location data to understand how restaurants and construction business are  
+
+distributed through out dallas county and come up with recommendation where to setup these businesses. 
+
+
+Dallas County is a county located in the U.S. state of Texas. As of the 2010 census, the population was 2,368,139. It is the second-most populous county in 
+
+Texas and the ninth-most populous in the United States. Its county seat is Dallas, which is also the third-largest city in Texas and the ninth-largest city in the United States.
+
+
+
+## Description of the data and how it will be used to solve the problem
+
+
+```python
+
+```
+
+
+Data for two sources will used to create dataframe with "City", "Zip Code", 'Longitude' and 'Latitude, which will be used to request venues 
+information from Foursquare.
+
+The two data are:- 
+
+1. US zip codes and their longitude/latitude from https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2018_Gazetteer/2018_Gaz_zcta_national.zip. 
+
+   Zip code data has longitude and latitude infromation for each US zip codes. But dallas county only covers zip codes from 75001 to 75398 where dalllas county zip codes need to be extracted. 
+  
+  
+2. Dallas county cities and zip codes from https://www.ciclt.net/sn/clt/capitolimpact/gw_ziplist.aspx?FIPS=48113
+
+   Dallas county cities and zip codes are listed in this data which will be combined with the zip code data to added longitude and latitude infromation for each zip code. 
+
+Each data will be imported and cleaned in order to build the correct dataframe for FourSquare API
+
+
+
+### Methodology 
+
+Infromation extracted from Foursquare will be grouped and cleaned to run KMeans clustering to understand where each type of venues are located in which city of the county.
+
+Based of the analysis, locations will be recommended where to setup restaurants and construction businessess. 
